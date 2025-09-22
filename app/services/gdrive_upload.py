@@ -5,7 +5,8 @@ import os
 FOLDER_ID = "138q20HHJFDxrQ87t5fVf-nOBYqc5jJxf"
 
 # Absolute paths
-CRED_DIR = os.path.dirname(__file__)
+CRED_DIR = os.environ.get("CRED_DIR", "/etc/secrets")
+
 CLIENT_SECRETS = os.path.join(CRED_DIR, "client_secrets.json")
 CREDENTIALS_FILE = os.path.join(CRED_DIR, "credentials.json")
 
