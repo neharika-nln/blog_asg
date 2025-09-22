@@ -47,7 +47,9 @@ def create_post():
     db.session.commit()
 
     return jsonify({
-        "message": "Post created successfully", "post_id": new_post.id, "image": image_url
+        "message": "Post created successfully",
+        "post_id": new_post.id,
+        "image": image_url
         }), 200
 
 
