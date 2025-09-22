@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+venv/
+instance/
+.env
+temp/
+client_secrets.json
+credentials.json
+init_db.py
